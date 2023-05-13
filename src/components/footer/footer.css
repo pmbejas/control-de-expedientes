@@ -1,0 +1,17 @@
+.main-footer {
+    width: 100vw;
+    min-height: 300px;
+    background-color: var(--color-fondo-footer);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.texto-copyright-footer {
+    color: var(--color-texto-blanco);
+    line-height: 0.5;
+    letter-spacing: 0.5;
+    padding-bottom: 10px;
+    font-size: small;
+}

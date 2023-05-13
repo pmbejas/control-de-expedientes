@@ -1,0 +1,87 @@
+.navbar-container {
+    height: 100%;
+    width: 100vw;
+    background-color: var(--color-fondo-menu);
+    display: grid;
+    grid-template-columns: 2fr 6fr 2fr;
+}
+
+.seccion-logo-navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion-opciones-navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion-users-navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 20px;
+    align-items: center;
+}
+
+.logotipo-navbar {
+    height: 40px;
+}
+
+.lista-elementos-navbar {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+
+}
+.elemento-navbar {
+    font-size: 1em;
+    font-weight: 500;
+    color: var(--color-texto-claro);
+    transform: color 0.8s ease-in-out;
+}
+
+.elemento-navbar:hover {
+    color: var(--color-texto-blanco);
+}
+
+.elemento-navbar li {
+    position: relative;
+}
+
+.submenu-navbar {
+    position: absolute;
+    display: none;
+    z-index: 3;
+    color: var(--color-texto-claro);
+    margin-top: 10px;
+    background-color: var(--color-fondo-menu);
+    padding: 10px 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgb(210, 210, 210);
+}
+
+.elemento-navbar:hover > .submenu-navbar {
+    display: block;
+}
+
+.submenu-navbar ul {
+    list-style: none;
+}
+
+.container-icono-usuario {
+    width: var(--width-icono-usuario);
+    height: var(--height-icono-usuario);
+    border: solid 2px var(--color-borders);
+    border-radius: 50%;
+    background-color: var(--unselected-background-navbar);
+}
+
+.icono-usuario {
+    width: var(--width-icono-usuario);
+    height: var(--height-icono-usuario);
+}
